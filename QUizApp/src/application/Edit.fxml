@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EditController">
+   <children>
+      <Button layoutX="899.0" layoutY="15.0" mnemonicParsing="false" onAction="#Save" prefHeight="607.0" prefWidth="87.0" text="Save" />
+      <Label layoutX="240.0" layoutY="11.0" prefHeight="57.0" prefWidth="111.0" text="    Quiz Title:">
+         <font>
+            <Font name="Andalus" size="18.0" />
+         </font></Label>
+      <TextField fx:id="quizTitletxF" layoutX="351.0" layoutY="15.0" prefHeight="48.0" prefWidth="531.0">
+         <font>
+            <Font name="Bookman Old Style" size="23.0" />
+         </font></TextField>
+      <ScrollPane layoutX="210.0" layoutY="76.0" prefHeight="546.0" prefWidth="672.0">
+         <content>
+            <VBox snapToPixel="false">
+               <children>
+                  <HBox>
+                     <children>
+                        <Label alignment="CENTER" prefHeight="108.0" prefWidth="25.0" text="1" />
+                        <TextArea fx:id="quizQuestion1store" prefHeight="108.0" prefWidth="300.0" promptText="Question here..." wrapText="true">
+                           <font>
+                              <Font name="Book Antiqua" size="17.0" />
+                           </font></TextArea>
+                        <AnchorPane prefHeight="87.0" prefWidth="245.0">
+                           <children>
+                              <TextField fx:id="quizAnswer1store" layoutX="25.0" layoutY="7.0" prefHeight="22.0" prefWidth="300.0" />
+                              <TextField fx:id="quizAnswer2store" layoutX="25.0" layoutY="29.0" prefHeight="22.0" prefWidth="300.0" />
+                              <TextField fx:id="quizAnswer3store" layoutX="25.0" layoutY="51.0" prefHeight="22.0" prefWidth="300.0" />
+                              <TextField fx:id="quizAnswer4store" layoutX="25.0" layoutY="74.0" prefHeight="22.0" prefWidth="300.0" />
+                              <RadioButton layoutX="4.0" layoutY="10.0" mnemonicParsing="false">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="ansq21" />
+                                 </toggleGroup>
+                              </RadioButton>
+                              <RadioButton layoutX="4.0" layoutY="32.0" mnemonicParsing="false" toggleGroup="$ansq21" />
+                              <RadioButton layoutX="4.0" layoutY="54.0" mnemonicParsing="false" toggleGroup="$ansq21" />
+                              <RadioButton layoutX="4.0" layoutY="77.0" mnemonicParsing="false" toggleGroup="$ansq21" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label alignment="CENTER" prefHeight="108.0" prefWidth="25.0" text="2" />
+                        <TextArea fx:id="quizQuestion2store" prefHeight="108.0" prefWidth="300.0" promptText="Question here..." wrapText="true">
+                           <font>
+                              <Font name="Book Antiqua" size="17.0" />
+                           </font></TextArea>
+                        <AnchorPane prefHeight="87.0" prefWidth="245.0">
+                           <children>
+                              <TextField fx:id="quizAnswer1store2" layoutX="25.0" layoutY="7.0" prefHeight="22.0" prefWidth="300.0" />
+                              <TextField fx:id="quizAnswer2store2" layoutX="25.0" layoutY="29.0" prefHeight="22.0" prefWidth="300.0" />
+                              <TextField fx:id="quizAnswer3store2" layoutX="25.0" layoutY="51.0" prefHeight="22.0" prefWidth="300.0" />
+                              <TextField fx:id="quizAnswer4store2" layoutX="25.0" layoutY="74.0" prefHeight="22.0" prefWidth="300.0" />
+                              <RadioButton layoutX="8.0" layoutY="10.0" mnemonicParsing="false">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="ansq2" />
+                                 </toggleGroup></RadioButton>
+                              <RadioButton layoutX="8.0" layoutY="32.0" mnemonicParsing="false" toggleGroup="$ansq2" />
+                              <RadioButton layoutX="8.0" layoutY="54.0" mnemonicParsing="false" toggleGroup="$ansq2" />
+                              <RadioButton layoutX="8.0" layoutY="77.0" mnemonicParsing="false" toggleGroup="$ansq2" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label alignment="CENTER" prefHeight="108.0" prefWidth="25.0" text="3" />
+                        <TextArea fx:id="quizQuestion3store" prefHeight="108.0" prefWidth="300.0" promptText="Question here..." wrapText="true">
+                           <font>
+                              <Font name="Book Antiqua" size="17.0" />
+                           </font></TextArea>
+                        <AnchorPane prefHeight="87.0" prefWidth="245.0">
+                           <children>
+                              <TextField fx:id="quizAnswer1store3" layoutX="25.0" layoutY="7.0" prefHeight="22.0" prefWidth="300.0" />
+                              <TextField fx:id="quizAnswer2store3" layoutX="25.0" layoutY="29.0" prefHeight="22.0" prefWidth="300.0" />
+                              <TextField fx:id="quizAnswer3store3" layoutX="25.0" layoutY="51.0" prefHeight="22.0" prefWidth="300.0" />
+                              <TextField fx:id="quizAnswer4store3" layoutX="25.0" layoutY="74.0" prefHeight="22.0" prefWidth="300.0" />
+                              <RadioButton layoutX="7.0" layoutY="10.0" mnemonicParsing="false">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="ansq3" />
+                                 </toggleGroup></RadioButton>
+                              <RadioButton layoutX="7.0" layoutY="32.0" mnemonicParsing="false" toggleGroup="$ansq3" />
+                              <RadioButton layoutX="7.0" layoutY="54.0" mnemonicParsing="false" toggleGroup="$ansq3" />
+                              <RadioButton layoutX="7.0" layoutY="77.0" mnemonicParsing="false" toggleGroup="$ansq3" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label alignment="CENTER" prefHeight="108.0" prefWidth="25.0" text="4" />
+                        <TextArea fx:id="quizQuestion4store" prefHeight="108.0" prefWidth="300.0" promptText="Question here..." wrapText="true">
+                           <font>
+                              <Font name="Book Antiqua" size="17.0" />
+                           </font></TextArea>
+                        <AnchorPane prefHeight="87.0" prefWidth="245.0">
+                           <children>
+                              
+                              <TextField fx:id="quizAnswer1store4" layoutX="25.0" layoutY="7.0" prefHeight="22.0" prefWidth="300.0" />
+                              <TextField fx:id="quizAnswer2store4" layoutX="25.0" layoutY="29.0" prefHeight="22.0" prefWidth="300.0" />
+                              <TextField fx:id="quizAnswer3store4" layoutX="25.0" layoutY="51.0" prefHeight="22.0" prefWidth="300.0" />
+                              <TextField fx:id="quizAnswer4store4" layoutX="25.0" layoutY="74.0" prefHeight="22.0" prefWidth="300.0" />
+                              <RadioButton layoutX="7.0" layoutY="11.0" mnemonicParsing="false">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="ansq4" />
+                                 </toggleGroup></RadioButton>
+                              <RadioButton layoutX="7.0" layoutY="33.0" mnemonicParsing="false" toggleGroup="$ansq4" />
+                              <RadioButton layoutX="7.0" layoutY="55.0" mnemonicParsing="false" toggleGroup="$ansq4" />
+                              <RadioButton layoutX="7.0" layoutY="78.0" mnemonicParsing="false" toggleGroup="$ansq4" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label alignment="CENTER" prefHeight="108.0" prefWidth="25.0" text="5" />
+                        <TextArea fx:id="quizQuestion5store" prefHeight="108.0" prefWidth="300.0" promptText="Question here..." wrapText="true">
+                           <font>
+                              <Font name="Book Antiqua" size="17.0" />
+                           </font></TextArea>
+                        <AnchorPane prefHeight="87.0" prefWidth="245.0">
+                           <children>
+                              
+                              <TextField fx:id="quizAnswer1store5" layoutX="25.0" layoutY="7.0" prefHeight="22.0" prefWidth="300.0" />
+                              <TextField fx:id="quizAnswer2store5" layoutX="25.0" layoutY="29.0" prefHeight="22.0" prefWidth="300.0" />
+                              <TextField fx:id="quizAnswer3store5" layoutX="25.0" layoutY="51.0" prefHeight="22.0" prefWidth="300.0" />
+                              <TextField fx:id="quizAnswer4store5" layoutX="25.0" layoutY="74.0" prefHeight="22.0" prefWidth="300.0" />
+                              <RadioButton layoutX="7.0" layoutY="11.0" mnemonicParsing="false">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="ansq5" />
+                                 </toggleGroup></RadioButton>
+                              <RadioButton layoutX="7.0" layoutY="33.0" mnemonicParsing="false" toggleGroup="$ansq5" />
+                              <RadioButton layoutX="7.0" layoutY="55.0" mnemonicParsing="false" toggleGroup="$ansq5" />
+                              <RadioButton layoutX="7.0" layoutY="78.0" mnemonicParsing="false" toggleGroup="$ansq5" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label alignment="CENTER" prefHeight="108.0" prefWidth="25.0" text="6" />
+                        <TextArea fx:id="quizQuestion6store" prefHeight="108.0" prefWidth="300.0" promptText="Question here..." wrapText="true">
+                           <font>
+                              <Font name="Book Antiqua" size="17.0" />
+                           </font></TextArea>
+                        <AnchorPane prefHeight="87.0" prefWidth="245.0">
+                           <children>
+                            
+                              <TextField fx:id="quizAnswer1store6" layoutX="25.0" layoutY="7.0" prefHeight="22.0" prefWidth="300.0" />
+                              <TextField fx:id="quizAnswer2store6" layoutX="25.0" layoutY="29.0" prefHeight="22.0" prefWidth="300.0" />
+                              <TextField fx:id="quizAnswer3store6" layoutX="25.0" layoutY="51.0" prefHeight="22.0" prefWidth="300.0" />
+                              <TextField fx:id="quizAnswer4store6" layoutX="25.0" layoutY="74.0" prefHeight="22.0" prefWidth="300.0" />
+                              <RadioButton layoutX="7.0" layoutY="11.0" mnemonicParsing="false">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="ansq6" />
+                                 </toggleGroup></RadioButton>
+                              <RadioButton layoutX="7.0" layoutY="33.0" mnemonicParsing="false" toggleGroup="$ansq6" />
+                              <RadioButton layoutX="7.0" layoutY="55.0" mnemonicParsing="false" toggleGroup="$ansq6" />
+                              <RadioButton layoutX="7.0" layoutY="78.0" mnemonicParsing="false" toggleGroup="$ansq6" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label alignment="CENTER" prefHeight="108.0" prefWidth="25.0" text="7" />
+                        <TextArea fx:id="quizQuestion7store" prefHeight="108.0" prefWidth="300.0" promptText="Question here..." wrapText="true">
+                           <font>
+                              <Font name="Book Antiqua" size="17.0" />
+                           </font></TextArea>
+                        <AnchorPane prefHeight="87.0" prefWidth="245.0">
+                           <children>
+                              
+                              <TextField fx:id="quizAnswer1store7" layoutX="25.0" layoutY="7.0" prefHeight="22.0" prefWidth="300.0" />
+                              <TextField fx:id="quizAnswer2store7" layoutX="25.0" layoutY="29.0" prefHeight="22.0" prefWidth="300.0" />
+                              <TextField fx:id="quizAnswer3store7" layoutX="25.0" layoutY="51.0" prefHeight="22.0" prefWidth="300.0" />
+                              <TextField fx:id="quizAnswer4store7" layoutX="25.0" layoutY="74.0" prefHeight="22.0" prefWidth="300.0" />
+                              <RadioButton layoutX="7.0" layoutY="11.0" mnemonicParsing="false">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="ansq7" />
+                                 </toggleGroup></RadioButton>
+                              <RadioButton layoutX="7.0" layoutY="33.0" mnemonicParsing="false" toggleGroup="$ansq7" />
+                              <RadioButton layoutX="7.0" layoutY="55.0" mnemonicParsing="false" toggleGroup="$ansq7" />
+                              <RadioButton layoutX="7.0" layoutY="78.0" mnemonicParsing="false" toggleGroup="$ansq7" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label alignment="CENTER" prefHeight="108.0" prefWidth="25.0" text="8" />
+                        <TextArea fx:id="quizQuestion8store" prefHeight="108.0" prefWidth="300.0" promptText="Question here..." wrapText="true">
+                           <font>
+                              <Font name="Book Antiqua" size="17.0" />
+                           </font></TextArea>
+                        <AnchorPane prefHeight="87.0" prefWidth="245.0">
+                           <children>
+                             
+                              <TextField fx:id="quizAnswer1store8" layoutX="25.0" layoutY="7.0" prefHeight="22.0" prefWidth="300.0" />
+                              <TextField fx:id="quizAnswer2store8" layoutX="25.0" layoutY="29.0" prefHeight="22.0" prefWidth="300.0" />
+                              <TextField fx:id="quizAnswer3store8" layoutX="25.0" layoutY="51.0" prefHeight="22.0" prefWidth="300.0" />
+                              <TextField fx:id="quizAnswer4store8" layoutX="25.0" layoutY="74.0" prefHeight="22.0" prefWidth="300.0" />
+                              <RadioButton layoutX="7.0" layoutY="11.0" mnemonicParsing="false">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="ansq8" />
+                                 </toggleGroup></RadioButton>
+                              <RadioButton layoutX="7.0" layoutY="33.0" mnemonicParsing="false" toggleGroup="$ansq8" />
+                              <RadioButton layoutX="7.0" layoutY="55.0" mnemonicParsing="false" toggleGroup="$ansq8" />
+                              <RadioButton layoutX="7.0" layoutY="78.0" mnemonicParsing="false" toggleGroup="$ansq8" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label alignment="CENTER" prefHeight="108.0" prefWidth="25.0" text="9" />
+                        <TextArea fx:id="quizQuestion9store" prefHeight="108.0" prefWidth="300.0" promptText="Question here..." wrapText="true">
+                           <font>
+                              <Font name="Book Antiqua" size="17.0" />
+                           </font></TextArea>
+                        <AnchorPane prefHeight="87.0" prefWidth="245.0">
+                           <children>
+                              
+                              <TextField fx:id="quizAnswer1store9" layoutX="25.0" layoutY="7.0" prefHeight="22.0" prefWidth="300.0" />
+                              <TextField fx:id="quizAnswer2store9" layoutX="25.0" layoutY="29.0" prefHeight="22.0" prefWidth="300.0" />
+                              <TextField fx:id="quizAnswer3store9" layoutX="25.0" layoutY="51.0" prefHeight="22.0" prefWidth="300.0" />
+                              <TextField fx:id="quizAnswer4store9" layoutX="25.0" layoutY="74.0" prefHeight="22.0" prefWidth="300.0" />
+                              <RadioButton layoutX="7.0" layoutY="11.0" mnemonicParsing="false">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="ansq9" />
+                                 </toggleGroup></RadioButton>
+                              <RadioButton layoutX="7.0" layoutY="33.0" mnemonicParsing="false" toggleGroup="$ansq9" />
+                              <RadioButton layoutX="7.0" layoutY="55.0" mnemonicParsing="false" toggleGroup="$ansq9" />
+                              <RadioButton layoutX="7.0" layoutY="78.0" mnemonicParsing="false" toggleGroup="$ansq9" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label alignment="CENTER" prefHeight="108.0" prefWidth="25.0" text="10" />
+                        <TextArea fx:id="quizQuestion10store" prefHeight="108.0" prefWidth="300.0" promptText="Question here..." wrapText="true">
+                           <font>
+                              <Font name="Book Antiqua" size="17.0" />
+                           </font></TextArea>
+                        <AnchorPane prefHeight="87.0" prefWidth="245.0">
+                           <children>
+                              <TextField fx:id="quizAnswer1store10" layoutX="25.0" layoutY="7.0" prefHeight="22.0" prefWidth="300.0" />
+                              <TextField fx:id="quizAnswer2store10" layoutX="25.0" layoutY="29.0" prefHeight="22.0" prefWidth="300.0" />
+                              <TextField fx:id="quizAnswer3store10" layoutX="25.0" layoutY="51.0" prefHeight="22.0" prefWidth="300.0" />
+                              <TextField fx:id="quizAnswer4store10" layoutX="25.0" layoutY="74.0" prefHeight="22.0" prefWidth="300.0" />
+                              <RadioButton layoutX="7.0" layoutY="11.0" mnemonicParsing="false">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="ansq10" />
+                                 </toggleGroup>
+                              </RadioButton>
+                              <RadioButton layoutX="7.0" layoutY="33.0" mnemonicParsing="false" toggleGroup="$ansq10" />
+                              <RadioButton layoutX="7.0" layoutY="55.0" mnemonicParsing="false" toggleGroup="$ansq10" />
+                              <RadioButton layoutX="7.0" layoutY="78.0" mnemonicParsing="false" toggleGroup="$ansq10" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+      <Label layoutX="46.0" layoutY="-5.0" prefHeight="60.0" prefWidth="159.0" text="Kiz App">
+         <font>
+            <Font name="Comic Sans MS Bold" size="37.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.976303317535545" startX="1.0" startY="0.3886255924170616">
+               <stops>
+                  <Stop color="#006aff" />
+                  <Stop color="#006aff" offset="0.007874015748031496" />
+                  <Stop color="#00e2ff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="57.0" layoutY="25.0" prefHeight="60.0" prefWidth="98.0" text="Editor">
+         <font>
+            <Font name="Comic Sans MS Bold" size="22.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.976303317535545" startX="1.0" startY="0.3886255924170616">
+               <stops>
+                  <Stop color="#ff8100" />
+                  <Stop color="#ff8100" offset="0.007874015748031496" />
+                  <Stop color="#ffd400" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <ImageView fitHeight="33.0" fitWidth="36.0" layoutX="6.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../kizapp_logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
